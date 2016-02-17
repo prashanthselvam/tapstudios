@@ -1,0 +1,138 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 250px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 0;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-y: hidden; // hide vertical
+    overflow-x: hidden; // hide horizontal
+    background: rgba(255, 255, 255, 0.14);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-wrapper {
+    width: 100%;
+    position: fixed;
+    padding: 30px;
+}
+
+#wrapper.toggled #page-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+
+
+/* Sidebar Styles */
+
+
+#sidebar-wrapper a.logo {
+    display: block;
+    padding: 10px;
+    background-color: #777;
+    color: #FFF;
+    width: 111px;
+    margin: 15px;
+    font-size: 26px;
+    text-decoration: none;
+    text-shadow: 0 0 0;
+}
+
+.sidebar-nav {
+    width: 200px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px;
+    font-family: 'raleway';
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.sidebar-nav li {
+    padding: 10px 15px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-wrapper {
+        padding: 0;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media(max-height: 480px) {
+    .sidebar-nav {
+        margin: 10vh auto;
+        height: 80vh;
+    }
+
+    .sidebar-nav li {
+    line-height: 16vh;
+    }
+}
