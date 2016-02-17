@@ -1,0 +1,35 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+
+
+
+<ul class="flex-container">
+
+
+{% for project in projects_list %}
+
+	<li class="flex-item"> 
+
+	<a href="{{ project.get_absolute_url }}">
+
+	{% if project.thumb %}
+
+	<img src="{{ project.thumb.url }}" class="thumb">
+
+	{% endif %}
+
+	
+
+	{{ project.name }}
+
+	</a>
+
+	</li>
+
+	{% endfor %}
+
+</ul>
+
+
+{% endblock %}
