@@ -6,12 +6,15 @@
 
 /* Toggle Styles */
 
+
+
 #wrapper {
     padding-left: 250px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    height: 100%;
 }
 
 #wrapper.toggled {
@@ -44,6 +47,8 @@
     width: 100%;
     position: fixed;
     padding: 30px;
+    height: 100%;
+    padding-bottom: 3em;
 }
 
 #wrapper.toggled #page-wrapper {
@@ -116,7 +121,6 @@
     }
 
     #page-wrapper {
-        padding: 0;
         position: relative;
     }
 

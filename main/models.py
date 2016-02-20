@@ -1,8 +1,10 @@
 from __future__ import unicode_literals
 from django.core.urlresolvers import reverse
 from django.db import models
+from django.utils import timezone
 from django.utils.text import slugify
 from tinymce.models import HTMLField
+
 
 # Create your models here.
 
@@ -40,6 +42,14 @@ class ProjectImages(models.Model):
 	name = getname
 	image = models.ImageField(blank = True, null = True, upload_to = image_upload_location)
 
+class Message(models.Model):
+	name = models.CharField(max_length=40)
+	email = models.EmailField()
+	subject = models.CharField(max_length=200)
+	text = models.TextField()
+	message_date = models.DateTimeField(
+            default=timezone.now)
 
-
+	def __str__(self):
+		return self.name
 
