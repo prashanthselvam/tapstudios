@@ -1,17 +1,17 @@
-html {
+/*html {
   overflow-y: scroll;
 }
-
+*/
 html, body {
    height: 100%;
    max-width: 100%;
-   font-family:'raleway', sans-serif;
+   font-family:'Roboto', sans-serif;
 }
 
-body {
+/*body {
      overflow: hidden;
 }
-
+*/
 
 a {
   color:#222222;
@@ -29,7 +29,7 @@ a {
   height: 85vh;
   text-align: center;
   font-size: 64px;
-  font-family: "raleway";
+  font-family: "Roboto";
   display: none;
 }
 
@@ -59,16 +59,15 @@ a {
   width: 100%;
   position: absolute;
   font-size: 64px;
-  font-family: "raleway";
+  font-family: "Roboto";
   top: 40%;
-  margin-top: -0.5em;
   text-align: center;
 }
 
 
 
 #footer {
-  font-family: raleway;
+  font-family: Roboto;
   font-size: 10px;
   width: 100%;
   clear: both;
@@ -88,30 +87,29 @@ a {
 
 #about p {
   margin-bottom: 28px;
-    font-family: raleway;
+    font-family: Roboto;
     font-size: 14px;
     line-height: 1.8em;
-}
-
-#about img {
-  margin-left: -25px;
 }
 
 
 /* Projects Page */
 
 .flex-container {
-  margin-top: 100px;
+  margin-top: 60px;
   list-style: none;
-  padding: 0;
-  
-  display: -webkit-box;
-  display: -moz-box;
+  padding: 0;  
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  
-  -webkit-flex-flow: row wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -159,6 +157,33 @@ a {
 #contactform .form-actions button { background-color: #777777; border: none; color: white; padding: 0.25em 20px; }
 #contactform .form-actions .error_msg { float: left; text-align: left; color: red; font-size: 14px; }
 #contactform .form-actions .thanks { float: left; text-align: left; color: green; font-size: 12px; margin-right: 10px; }
+
+/*@media(max-height: 667px) {
+  #contactform {
+    margin-top: 20vh;
+  }
+}*/
+
+@media(max-height: 559px) {
+  #contactform {
+    margin-top: 3vh;
+  }
+}
+
+
+@media(min-height: 560px) {
+  #contactform {
+    margin-top: 12vh;
+  }
+}
+
+@media(min-height: 620px) {
+  #contactform {
+    margin-top: 20vh;
+  }
+}
+
+
 
 
 

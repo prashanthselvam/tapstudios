@@ -31,7 +31,7 @@ $(document).ready(function(){
          $(this).addClass('active');
         }
     });
-    checkSize();
+    setTimeout(checkSize, 100);
 
 });
 
