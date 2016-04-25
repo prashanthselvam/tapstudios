@@ -186,6 +186,15 @@ a {
   padding-top: 25px;
 }
 
+#project-desc {
+  padding-top: 25px;
+}
+
+#project-desc h1 {
+  font-size: large;
+  font-family: 'Roboto', sans-serif;
+}
+
 
 
 /* Contact Page */
