@@ -1,18 +1,12 @@
 {% extends "main/base.html" %}
 
-{% block coming %}
-
-			<div id="comingsoonbox">
-				<p>COMING SOON</p>
-			</div>
-
-{% endblock %}
 
 {% block content %}
 
 <div id="comingsoon"> 
 
-	<p>COMING SOON</p>
+	{% load static %}
+	<img class="img-responsive" src="{% static "img/frontimg.jpg" %}">
 
 </div>
 

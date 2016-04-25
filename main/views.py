@@ -30,11 +30,11 @@ def contact_form(request):
 			message = 'From: ' + name + '\n\nEmail: ' + sender + '\n\nMessage:' + form.cleaned_data['text']
 			subject = form.cleaned_data['subject']
 			form.save()
-			recipient = ['pselvam@conncoll.edu']
+			recipient = ['shigewood@gmail.com']
 			send_mail(subject,message,settings.EMAIL_HOST_USER,recipient,fail_silently=False)
 			global thanks
 			form = ContactForm()
-			thanks = 'Thanks! I will get back to you as soon as possible.'
+			thanks = 'Thank you! We will get back to you shortly.'
 
 
 	else:

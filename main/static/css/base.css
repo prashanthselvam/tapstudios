@@ -26,11 +26,9 @@ a {
 
 
 #comingsoon {
-  height: 85vh;
   text-align: center;
   font-size: 64px;
   font-family: "Roboto";
-  display: none;
 }
 
 #comingsoon p {
